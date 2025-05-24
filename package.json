@@ -1,0 +1,24 @@
+{
+  "name": "givlet",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:client": "vite",
+    "dev:server": "node server.js",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "build": "vite build",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.0",
+    "socket.io-client": "^4.8.1",
+    "three": "^0.176.0",
+    "uuid": "^11.1.0"
+  }
+}
